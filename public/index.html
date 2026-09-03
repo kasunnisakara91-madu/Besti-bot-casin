@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bestie Mini Admin</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="login" class="center"><div class="card login"><h1>🤖 Bestie Mini</h1><p>Admin Panel</p><input id="password" type="password" placeholder="Admin password"><button onclick="login()">LOGIN</button><div id="err"></div></div></div>
+<div id="app" class="hidden"><aside><h2>BESTIE MINI</h2><button onclick="showAdd()">＋ Add Case</button><button onclick="load()">▣ All Cases</button><button onclick="exportCases()">⇩ Download Cases</button><button onclick="logout()">↪ Logout</button></aside>
+<main><header><div><h1>Case Manager</h1><p>Add and manage WhatsApp Mini Bot cases.</p></div><span id="count"></span></header>
+<section id="form" class="card hidden"><h2 id="formTitle">Add Case</h2><input id="name" placeholder="Case name (e.g. Movie Search)"><input id="command" placeholder="Command (e.g. movie)"><textarea id="code" placeholder="Paste your case code here..."></textarea><div><button onclick="save()">SAVE CASE</button><button class="secondary" onclick="hideForm()">CANCEL</button></div></section>
+<section id="list"></section></main></div>
+<script src="app.js"></script></body></html>
